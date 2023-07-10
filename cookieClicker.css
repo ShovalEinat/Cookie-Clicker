@@ -1,0 +1,33 @@
+body{
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow:0 0 10px rgb(0, 0, 0);
+    font-size: 35px;
+    background-image: url('background.png');
+}
+
+#cookie{
+    width: 15%;
+    height: auto;
+    cursor: pointer;
+}
+
+#cookie:hover{
+    filter: brightness(0.9);
+} 
+
+#X2, #X4, #grandma , #grandma2{
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: #0b93bd;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.shop:hover{
+    background-color: #087292;
+}
