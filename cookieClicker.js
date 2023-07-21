@@ -116,24 +116,3 @@ function paskaro() {
     cookies = cookies + 12345678;
     cookiesAmo.innerText = "Cookies: " + cookies;
 }
-
-function updateCPS() {
-  if (clickCount > 0) {
-    endTime = new Date().getTime() / 1000; // Convert milliseconds to seconds
-    const cps = clickCount / (endTime - startTime);
-    cpsDisplay.innerText = cps.toFixed(2) + " CPS"; // Display CPS with 2 decimal places
-  } else {
-    cpsDisplay.innerText = "0 CPS";
-  }
-
-  clickCount = 0;
-  startTime = new Date().getTime() / 1000; // Convert milliseconds to seconds
-}
-
-function cookieClick() {
-  clickCount++;
-  cookies++;
-  cookiesAmo.innerText = "Cookies: " + cookies;
-}
-
-setInterval(updateCPS, 1000); // Update CPS every second
